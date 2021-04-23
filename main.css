@@ -183,4 +183,14 @@ main {
   body {
     background: #fff;
   }
+  .contactWrap {
+    display: flex;
+  }
+  .contactWrap .contact {
+    width: auto;
+  }
+  section {
+    padding-bottom: 10px;
+    margin-top: 25px;
+  }
 }
