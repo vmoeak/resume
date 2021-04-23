@@ -171,6 +171,14 @@ main {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .contactWrap {
+    display: block;
+  }
+  .contactWrap .contact {
+    width: 40%;
+  }
+}
 @media print {
   body {
     background: #fff;
