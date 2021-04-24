@@ -3,6 +3,7 @@ body {
   font: 14px/1.5 Arial;
   color: #666;
   background: #efefef;
+  border: 1px solid red;
 }
 .layout {
   max-width: 900px;
@@ -133,15 +134,25 @@ section h2 {
 main {
   flex: 1;
 }
+.scan-wrap {
+  display: flex;
+  position: relative;
+}
+.scan-list {
+  flex: 1;
+}
+.blank {
+  width: 120px;
+}
+
 .scan {
   margin-top: 10px;
-  position: relative;
 }
 .scan img {
   position: absolute;
   vertical-align: middle;
-  right: 0;
-  top: -45px;
+  right: 0px;
+  top: 20px;
 }
 @media (max-width: 768px) {
   aside {
@@ -170,19 +181,20 @@ main {
     display: none;
   }
 }
-@media (max-width: 800px) {
-  .scan img {
-    position: static;
-    margin-left: 24px;
-    vertical-align: middle;
-  }
-}
 @media (max-width: 600px) {
   .contactWrap {
     display: block;
   }
   .contactWrap .contact {
     width: 40%;
+  }
+  .scan img {
+    position: static;
+    margin-left: 24px;
+    vertical-align: middle;
+  }
+  .blank {
+    display: none;
   }
 }
 @media print {
@@ -196,14 +208,17 @@ main {
     width: auto;
   }
   section {
-    padding-bottom: 12px;
-    margin-top: 10px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+  }
+  .blank {
+    display: block;
   }
   .scan img {
     position: absolute;
     vertical-align: middle;
-    right: 0;
-    top: -45px;
+    right: 0px;
+    top: 20px;
   }
 }
 
