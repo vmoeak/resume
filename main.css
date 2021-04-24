@@ -3,7 +3,6 @@ body {
   font: 14px/1.5 Arial;
   color: #666;
   background: #efefef;
-  border: 1px solid red;
 }
 .layout {
   max-width: 900px;
